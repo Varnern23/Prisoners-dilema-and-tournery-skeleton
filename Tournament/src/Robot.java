@@ -28,6 +28,9 @@ public abstract class Robot {
     public void record(int round, RoundInfo info) {
     	history.put(round, info);
     }
+    public RoundInfo getRoundInfo(int round) {
+        return history.get(round);
+    }
 }
 	
 
